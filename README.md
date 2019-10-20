@@ -24,9 +24,11 @@ import UsingKeyboard, {
 } from '@accessibile/using-keyboard'
 
 const App = props => (
-  <UsingKeyboard className='using-keyboard'>
-    <div className='my-app'>
-      // rest of the app
+  <UsingKeyboard className="using-keyboard">
+    <div className="my-app">
+      // This will have the class name 'using-keyboard' 
+      // when a keyboard drew the last focus in a document.
+      // This is, during keyboard navigation
     </div>
   </UsingKeyboard>
 )
