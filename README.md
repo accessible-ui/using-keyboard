@@ -22,6 +22,14 @@ import UsingKeyboard, {
   BodyUsingKeyboard,
   useUsingKeyboard,
 } from '@accessibile/using-keyboard'
+
+const App = props => (
+  <UsingKeyboard className='using-keyboard'>
+    <div className='my-app'>
+      // rest of the app
+    </div>
+  </UsingKeyboard>
+)
 ```
 
 ### `useUsingKeyboard(defaultUsingKeyboard?: bool): bool`
@@ -30,8 +38,8 @@ A React hook that returns `true` when the keyboard was used more recently than t
 focusing an element.
 
 | Prop                 | Type   | Required | Default | Description                             |
-| -------------------- | ------ | ---------- | ------- | --------------------------------------- |
-| defaultUsingKeyboard | `bool` | `false`    | `false` | Sets the default value of usingKeyboard |
+| -------------------- | ------ | -------- | ------- | --------------------------------------- |
+| defaultUsingKeyboard | `bool` | `false`  | `false` | Sets the default value of usingKeyboard |
 
 ### `<BodyUsingKeyboard />`
 
@@ -39,10 +47,10 @@ A React component that adds a `using-keyboard` class to the `<body>` when the ke
 than the mouse for focusing an element. It removes the class each time a `mousedown` event fires.
 
 | Prop                 | Type            | Required | Default          | Description                                                                            |
-| -------------------- | --------------- | ---------- | ---------------- | -------------------------------------------------------------------------------------- |
-| className            | `string`        | `false`    | `using-keyboard` | This is the class name that gets appended to the body                                  |
-| defaultUsingKeyboard | `bool`          | `false`    | `false`          | Sets the default value of usingKeyboard                                                |
-| children             | `React.Element` | `false`    | `null`           | By default this renders no children, but it will render any children you provide here. |
+| -------------------- | --------------- | -------- | ---------------- | -------------------------------------------------------------------------------------- |
+| className            | `string`        | `false`  | `using-keyboard` | This is the class name that gets appended to the body                                  |
+| defaultUsingKeyboard | `bool`          | `false`  | `false`          | Sets the default value of usingKeyboard                                                |
+| children             | `React.Element` | `false`  | `null`           | By default this renders no children, but it will render any children you provide here. |
 
 ### `<UsingKeyboard />`
 
@@ -50,10 +58,10 @@ A React component that adds a `using-keyboard` class to its child element when t
 than the mouse for focusing an element. It removes the class each time a `mousedown` event fires.
 
 | Prop                 | Type            | Required | Default          | Description                                                                            |
-| -------------------- | --------------- | ---------- | ---------------- | -------------------------------------------------------------------------------------- |
-| className            | `string`        | `false`    | `using-keyboard` | This is the class name that gets appended to the child element                         |
-| defaultUsingKeyboard | `bool`          | `false`    | `false`          | Sets the default value of usingKeyboard                                                |
-| children             | `React.Element` | `false`    | `null`           | By default this renders no children, but it will render any children you provide here. |
+| -------------------- | --------------- | -------- | ---------------- | -------------------------------------------------------------------------------------- |
+| className            | `string`        | `false`  | `using-keyboard` | This is the class name that gets appended to the child element                         |
+| defaultUsingKeyboard | `bool`          | `false`  | `false`          | Sets the default value of usingKeyboard                                                |
+| children             | `React.Element` | `false`  | `null`           | By default this renders no children, but it will render any children you provide here. |
 
 ## LICENSE
 
