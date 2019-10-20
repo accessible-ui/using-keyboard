@@ -1,9 +1,37 @@
-/* jest */
-// import React from 'react'
-// import {renderHook} from '@testing-library/react-hooks'
-// import {render} from '@testing-library/react'
-const hello = world => `hello ${world}`
+import React from 'react'
+import {render} from '@testing-library/react'
+import UsingKeyboard from './index'
 
-test('passes', () => {
-  expect(hello('world')).toMatchSnapshot()
+test('UsingKeyboard -> adds classname', () => {
+  expect(
+    render(
+      <UsingKeyboard defaultUsingKeyboard={false}>
+        <span>Foo</span>
+      </UsingKeyboard>
+    ).asFragment()
+  ).toMatchSnapshot('without class name')
+
+  expect(
+    render(
+      <UsingKeyboard defaultUsingKeyboard>
+        <span>Foo</span>
+      </UsingKeyboard>
+    ).asFragment()
+  ).toMatchSnapshot('with class name')
+
+  expect(
+    render(
+      <UsingKeyboard defaultUsingKeyboard={false}>
+        <span className="foo">Foo</span>
+      </UsingKeyboard>
+    ).asFragment()
+  ).toMatchSnapshot('without class name appended')
+
+  expect(
+    render(
+      <UsingKeyboard defaultUsingKeyboard>
+        <span className="foo">Foo</span>
+      </UsingKeyboard>
+    ).asFragment()
+  ).toMatchSnapshot('with class name appended')
 })

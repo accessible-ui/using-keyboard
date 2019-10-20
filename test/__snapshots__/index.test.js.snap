@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsingKeyboard -> adds classname: with class name 1`] = `
+<DocumentFragment>
+  <span
+    class="using-keyboard"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: with class name appended 1`] = `
+<DocumentFragment>
+  <span
+    class="foo using-keyboard"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: without class name 1`] = `
+<DocumentFragment>
+  <span
+    class=""
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: without class name appended 1`] = `
+<DocumentFragment>
+  <span
+    class="foo"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;

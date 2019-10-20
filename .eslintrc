@@ -13,11 +13,7 @@
     "plugin:react/recommended",
     "plugin:jest/recommended"
   ],
-  "plugins": [
-    "jest",
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["jest", "react", "react-hooks"],
   "rules": {
     "no-console": "off",
     "no-prototype-builtins": "off",

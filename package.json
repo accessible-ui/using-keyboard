@@ -1,16 +1,26 @@
 {
-  "name": "@accessible/focus",
+  "name": "@accessible/using-keyboard",
   "version": "1.0.0",
-  "homepage": "https://github.com/jaredLunde/accessible#readme",
-  "repository": "github:jaredLunde/accessible",
-  "bugs": "https://github.com/jaredLunde/accessible/issues",
+  "homepage": "https://github.com/jaredLunde/accessible-using-keyboard#readme",
+  "repository": "github:jaredLunde/accessible-using-keyboard",
+  "bugs": "https://github.com/jaredLunde/accessible-using-keyboard/issues",
   "author": "Jared Lunde <jared@BeStellar.co> (https://jaredLunde.com)",
   "license": "MIT",
-  "description": "A React component for adding accessible focus styles to elements when using keyboard navigation",
+  "description": "React utilities for adding accessible focus styles to elements when using keyboard navigation",
   "keywords": [
     "react",
     "react component",
-    "focus"
+    "a11y",
+    "aria",
+    "accessibility",
+    "accessible",
+    "accessible focus",
+    "a11y focus",
+    "aria focus",
+    "accessible keyboard navigation",
+    "a11y keyboard navigation",
+    "aria keyboard navigation",
+    "using keyboard"
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
@@ -64,6 +74,12 @@
     "react-test-renderer": "latest",
     "rimraf": "^2.6.3"
   },
-  "dependencies": {},
-  "peerDependencies": {}
+  "dependencies": {
+    "@react-hook/passive-layout-effect": "^1.0.0",
+    "classnames": "^2.2.6"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15.6",
+    "react": ">=16.8"
+  }
 }
