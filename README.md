@@ -49,7 +49,7 @@ than the mouse for focusing an element. It removes the class each time a `moused
 
 | Prop                 | Type            | Required | Default          | Description                                                                            |
 | -------------------- | --------------- | -------- | ---------------- | -------------------------------------------------------------------------------------- |
-| className            | `string`        | `false`  | `using-keyboard` | This is the class name that gets appended to the body                                  |
+| className            | `string`        | `false`  | `"using-keyboard"` | This is the class name that gets appended to the body                                  |
 | defaultUsingKeyboard | `bool`          | `false`  | `false`          | Sets the default value of usingKeyboard                                                |
 | children             | `React.Element` | `false`  | `null`           | By default this renders no children, but it will render any children you provide here. |
 
@@ -60,7 +60,7 @@ than the mouse for focusing an element. It removes the class each time a `moused
 
 | Prop                 | Type            | Required | Default          | Description                                                                            |
 | -------------------- | --------------- | -------- | ---------------- | -------------------------------------------------------------------------------------- |
-| className            | `string`        | `false`  | `using-keyboard` | This is the class name that gets appended to the child element                         |
+| className            | `string`        | `false`  | `"using-keyboard"` | This is the class name that gets appended to the child element                         |
 | defaultUsingKeyboard | `bool`          | `false`  | `false`          | Sets the default value of usingKeyboard                                                |
 | children             | `React.Element` | `false`  | `null`           | By default this renders no children, but it will render any children you provide here. |
 
