@@ -1,7 +1,7 @@
-[![bundlephobia](https://img.shields.io/bundlephobia/minzip/@accessible/using-keyboard?style=plastic)](https://bundlephobia.com/result?p=@accessible/using-keyboard)
-[![codecov](https://codecov.io/gh/jaredLunde/accessible-using-keyboard/branch/master/graph/badge.svg)](https://codecov.io/gh/jaredLunde/accessible-using-keyboard)
-[![Build Status](https://travis-ci.org/jaredLunde/accessible-using-keyboard.svg?branch=master)](https://travis-ci.org/jaredLunde/accessible-using-keyboard)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://jaredlunde.mit-license.org/)
+[![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@accessible/using-keyboard?style=for-the-badge)](https://bundlephobia.com/result?p=@accessible/using-keyboard)
+[![Code coverage](https://img.shields.io/codecov/c/gh/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://codecov.io/gh/jaredLunde/accessible-using-keyboard)
+[![Build status](https://img.shields.io/travis/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://travis-ci.org/jaredLunde/accessible-using-keyboard)
+[![License](https://img.shields.io/github/license/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://jaredlunde.mit-license.org/)
 
 ---
 
@@ -38,7 +38,7 @@ const App = props => (
 A React hook that returns `true` when the keyboard was used more recently than the mouse for
 focusing an element.
 
-| Argument                 | Type   | Required | Default | Description                             |
+| Argument             | Type   | Required | Default | Description                             |
 | -------------------- | ------ | -------- | ------- | --------------------------------------- |
 | defaultUsingKeyboard | `bool` | `false`  | `false` | Sets the default value of usingKeyboard |
 
