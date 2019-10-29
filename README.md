@@ -1,21 +1,36 @@
-[![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@accessible/using-keyboard?style=for-the-badge)](https://bundlephobia.com/result?p=@accessible/using-keyboard)
-[![Code coverage](https://img.shields.io/codecov/c/gh/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://codecov.io/gh/jaredLunde/accessible-using-keyboard)
-[![Build status](https://img.shields.io/travis/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://travis-ci.org/jaredLunde/accessible-using-keyboard)
-[![License](https://img.shields.io/github/license/jaredLunde/accessible-using-keyboard?style=for-the-badge)](https://jaredlunde.mit-license.org/)
+<hr>
+<div align="center">
+  <h1 align="center">
+    @accessible/using-keyboard
+  </h1>
+</div>
 
----
+<p align="center">
+  <a href="https://bundlephobia.com/result?p=@accessible/using-keyboard">
+    <img alt="Bundlephobia" src="https://img.shields.io/bundlephobia/minzip/@accessible/using-keyboard?style=for-the-badge&labelColor=24292e">
+  </a>
+  <a aria-label="Code coverage report" href="https://codecov.io/gh/jaredLunde/accessible-using-keyboard">
+    <img alt="Code coverage" src="https://img.shields.io/codecov/c/gh/jaredLunde/accessible-using-keyboard?style=for-the-badge&labelColor=24292e">
+  </a>
+  <a aria-label="Build status" href="https://travis-ci.org/jaredLunde/accessible-using-keyboard">
+    <img alt="Build status" src="https://img.shields.io/travis/jaredLunde/accessible-using-keyboard?style=for-the-badge&labelColor=24292e">
+  </a>
+  <a aria-label="NPM version" href="https://www.npmjs.com/package/@accessible/using-keyboard">
+    <img alt="NPM Version" src="https://img.shields.io/npm/v/@accessible/using-keyboard?style=for-the-badge&labelColor=24292e">
+  </a>
+  <a aria-label="License" href="https://jaredlunde.mit-license.org/">
+    <img alt="MIT License" src="https://img.shields.io/npm/l/@accessible/using-keyboard?style=for-the-badge&labelColor=24292e">
+  </a>
+</p>
 
-# @accessible/using-keyboard
+<pre align="center">
+  npm i @accessible/using-keyboard
+</pre>
+<hr>
 
 React utilities for adding accessible focus styles to elements when someone is using keyboard navigation
 
-## Installation
-
-#### `npm i @accessible/using-keyboard`
-
-#### `yarn add @accessible/using-keyboard`
-
-## Usage
+## Quick Start
 
 ```jsx harmony
 import UsingKeyboard, {
