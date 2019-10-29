@@ -49,6 +49,8 @@ const App = props => (
 )
 ```
 
+## API
+
 ### `useUsingKeyboard(defaultUsingKeyboard?: bool): bool`
 
 A React hook that returns `true` when the keyboard was used more recently than the mouse for
