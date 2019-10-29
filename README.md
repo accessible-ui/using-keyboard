@@ -1,7 +1,7 @@
 <hr>
 <div align="center">
   <h1 align="center">
-    @accessible/using-keyboard
+    &lt;UsingKeyboard/&gt;
   </h1>
 </div>
 
@@ -41,9 +41,9 @@ import UsingKeyboard, {
 const App = props => (
   <UsingKeyboard className="using-keyboard">
     <div className="my-app">
-      // This will have the class name 'my-app using-keyboard' 
-      // when a keyboard drew the last focus in a document. 
-      // That is, during keyboard navigation
+      // This will have the class name 'my-app using-keyboard' // when a
+      keyboard drew the last focus in a document. // That is, during keyboard
+      navigation
     </div>
   </UsingKeyboard>
 )
