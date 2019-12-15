@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BodyUsingKeybooard> -> adds classname: with children 1`] = `
+<body>
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+  <div>
+    Foo
+  </div>
+</body>
+`;
+
+exports[`<BodyUsingKeybooard> -> adds classname: with class name 1`] = `
+<body
+  class="using-keyboard"
+>
+  <div />
+  <div />
+</body>
+`;
+
+exports[`<BodyUsingKeybooard> -> adds classname: with class name appended 1`] = `
+<body
+  class="foo using-keyboard"
+>
+  <div />
+  <div />
+  <div />
+  <div />
+</body>
+`;
+
+exports[`<BodyUsingKeybooard> -> adds classname: with custom class 1`] = `
+<body
+  class="keyboarding"
+>
+  <div />
+  <div />
+  <div />
+  <div />
+  <div />
+</body>
+`;
+
+exports[`<BodyUsingKeybooard> -> adds classname: without class name 1`] = `
+<body>
+  <div />
+</body>
+`;
+
+exports[`<BodyUsingKeybooard> -> adds classname: without class name appended 1`] = `
+<body
+  class="foo"
+>
+  <div />
+  <div />
+  <div />
+</body>
+`;
+
+exports[`UsingKeyboard -> adds classname: with class name 1`] = `
+<DocumentFragment>
+  <span
+    class="using-keyboard"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: with class name appended 1`] = `
+<DocumentFragment>
+  <span
+    class="foo using-keyboard"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: with custom class 1`] = `
+<DocumentFragment>
+  <span
+    class="keyboarding"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: without class name 1`] = `
+<DocumentFragment>
+  <span
+    class=""
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;
+
+exports[`UsingKeyboard -> adds classname: without class name appended 1`] = `
+<DocumentFragment>
+  <span
+    class="foo"
+  >
+    Foo
+  </span>
+</DocumentFragment>
+`;

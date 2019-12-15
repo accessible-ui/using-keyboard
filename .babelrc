@@ -9,10 +9,11 @@
             "node": "8"
           }
         },
-        "typescript": false
+        "devExpression": false
       }
     ]
   ],
+  "plugins": ["optimize-react", "typescript-to-proptypes"],
   "env": {
     "es": {
       "presets": [
@@ -25,7 +26,8 @@
                 "browsers": "> 2%"
               }
             },
-            "typescript": false
+            "objectAssign": false,
+            "devExpression": false
           }
         ]
       ]
