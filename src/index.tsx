@@ -1,5 +1,6 @@
 import React, {cloneElement, useState} from 'react'
 import useLayoutEffect from '@react-hook/passive-layout-effect'
+import useEvent from '@react-hook/event'
 import clsx from 'clsx'
 
 const __DEV__ =
@@ -8,19 +9,8 @@ const __DEV__ =
 // istanbul ignore next
 export const useUsingKeyboard = (defaultUsingKeyboard = false): boolean => {
   const [usingKeyboard, setUsingKeyboard] = useState(defaultUsingKeyboard)
-
-  useLayoutEffect(() => {
-    const canFocus = () => setUsingKeyboard(true)
-    const cantFocus = () => setUsingKeyboard(false)
-    document.body.addEventListener('mousedown', cantFocus)
-    document.body.addEventListener('keydown', canFocus)
-
-    return () => {
-      document.body.removeEventListener('mousedown', cantFocus)
-      document.body.removeEventListener('keydown', canFocus)
-    }
-  }, [])
-
+  useEvent(document.body, 'mousedown', () => setUsingKeyboard(false))
+  useEvent(document.body, 'keydown', () => setUsingKeyboard(true))
   return usingKeyboard
 }
 

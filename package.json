@@ -1,6 +1,6 @@
 {
   "name": "@accessible/using-keyboard",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "https://github.com/accessible-ui/accessible#readme",
   "repository": "github:accessible-ui/accessible",
   "bugs": "https://github.com/accessible-ui/accessible/issues",
@@ -85,7 +85,8 @@
     "typescript": "latest"
   },
   "dependencies": {
-    "@react-hook/passive-layout-effect": "^1.0.2",
+    "@react-hook/event": "^1.0.4",
+    "@react-hook/passive-layout-effect": "^1.0.3",
     "clsx": "^1.0.4"
   },
   "peerDependencies": {
