@@ -40,7 +40,7 @@ import {
   useUsingKeyboard,
 } from '@accessibile/using-keyboard'
 
-const App = props => (
+const App = (props) => (
   <UsingKeyboard className="using-keyboard">
     <div className="my-app">
       // This will have the class name 'my-app using-keyboard' // when a

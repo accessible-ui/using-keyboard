@@ -3,9 +3,6 @@ import useLayoutEffect from '@react-hook/passive-layout-effect'
 import useEvent from '@react-hook/event'
 import clsx from 'clsx'
 
-const __DEV__ =
-  typeof process !== 'undefined' && process.env.NODE_ENV !== 'production'
-
 // istanbul ignore next
 export const useUsingKeyboard = (defaultUsingKeyboard = false): boolean => {
   const [usingKeyboard, setUsingKeyboard] = useState(defaultUsingKeyboard)
@@ -31,7 +28,7 @@ export const BodyUsingKeyboard: React.FC<BodyUsingKeyboardProps> = ({
     return () => {
       document.body.classList.remove(className)
     }
-  }, [usingKeyboard])
+  }, [usingKeyboard, className])
   return children
 }
 
@@ -58,7 +55,7 @@ export const UsingKeyboard: React.FC<UsingKeyboardProps> = ({
 }
 
 // istanbul ignore next
-if (__DEV__) {
+if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'production') {
   BodyUsingKeyboard.displayName = 'BodyUsingKeyboard'
   UsingKeyboard.displayName = 'UsingKeyboard'
 }
