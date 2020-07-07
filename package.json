@@ -1,6 +1,6 @@
 {
   "name": "@accessible/using-keyboard",
-  "version": "0.1.0",
+  "version": "2.1.1",
   "homepage": "https://github.com/accessible-ui/using-keyboard#readme",
   "repository": "github:accessible-ui/using-keyboard",
   "bugs": "https://github.com/accessible-ui/using-keyboard/issues",
@@ -10,6 +10,16 @@
   "keywords": [
     "react",
     "react component",
+    "a11y",
+    "aria",
+    "accessibility",
+    "accessible",
+    "accessible focus",
+    "a11y focus",
+    "aria focus",
+    "accessible keyboard navigation",
+    "a11y keyboard navigation",
+    "aria keyboard navigation",
     "using keyboard"
   ],
   "main": "dist/main/index.js",
