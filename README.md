@@ -41,8 +41,8 @@ import {
 } from '@accessibile/using-keyboard'
 
 const App = (props) => (
-  <UsingKeyboard className="using-keyboard">
-    <div className="my-app">
+  <UsingKeyboard className='using-keyboard'>
+    <div className='my-app'>
       // This will have the class name 'my-app using-keyboard' // when a
       keyboard drew the last focus in a document. // That is, during keyboard
       navigation
@@ -53,16 +53,20 @@ const App = (props) => (
 
 ## API
 
-### `useUsingKeyboard(defaultUsingKeyboard?: boolean): boolean`
+### useUsingKeyboard(defaultUsingKeyboard)
 
 A React hook that returns `true` when the keyboard was used more recently than the mouse for
 focusing an element.
+
+#### Arguments
 
 | Argument             | Type      | Required | Default | Description                             |
 | -------------------- | --------- | -------- | ------- | --------------------------------------- |
 | defaultUsingKeyboard | `boolean` | `false`  | `false` | Sets the default value of usingKeyboard |
 
-### `<BodyUsingKeyboard />`
+#### Returns `boolean`
+
+### &lt;BodyUsingKeyboard&gt;
 
 A React component that adds a `using-keyboard` class to the `<body>` when the keyboard was used more recently
 than the mouse for focusing an element. It removes the class each time a `mousedown` event fires.
@@ -73,7 +77,7 @@ than the mouse for focusing an element. It removes the class each time a `moused
 | defaultUsingKeyboard | `boolean`            | `false`  | `false`            | Sets the default value of usingKeyboard                                                |
 | children             | `React.ReactElement` | `false`  | `undefined`        | By default this renders no children, but it will render any children you provide here. |
 
-### `<UsingKeyboard />`
+### &lt;UsingKeyboard&gt;
 
 A React component that adds a `using-keyboard` class to its child element when the keyboard was used more recently
 than the mouse for focusing an element. It removes the class each time a `mousedown` event fires.

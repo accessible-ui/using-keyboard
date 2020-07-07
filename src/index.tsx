@@ -1,11 +1,11 @@
-import React, {cloneElement, useState} from 'react'
+import * as React from 'react'
 import useLayoutEffect from '@react-hook/passive-layout-effect'
 import useEvent from '@react-hook/event'
 import clsx from 'clsx'
 
 // istanbul ignore next
 export const useUsingKeyboard = (defaultUsingKeyboard = false): boolean => {
-  const [usingKeyboard, setUsingKeyboard] = useState(defaultUsingKeyboard)
+  const [usingKeyboard, setUsingKeyboard] = React.useState(defaultUsingKeyboard)
   useEvent(document.body, 'mousedown', () => setUsingKeyboard(false))
   useEvent(document.body, 'keydown', () => setUsingKeyboard(true))
   return usingKeyboard
@@ -17,11 +17,11 @@ export interface BodyUsingKeyboardProps {
   children?: any
 }
 
-export const BodyUsingKeyboard: React.FC<BodyUsingKeyboardProps> = ({
+export const BodyUsingKeyboard = ({
   className = 'using-keyboard',
   defaultUsingKeyboard = false,
   children = null,
-}) => {
+}: BodyUsingKeyboardProps) => {
   const usingKeyboard = useUsingKeyboard(defaultUsingKeyboard)
   useLayoutEffect(() => {
     if (usingKeyboard) document.body.classList.add(className)
@@ -38,12 +38,12 @@ export interface UsingKeyboardProps {
   children: React.ReactElement | JSX.Element
 }
 
-export const UsingKeyboard: React.FC<UsingKeyboardProps> = ({
+export const UsingKeyboard = ({
   className = 'using-keyboard',
   defaultUsingKeyboard = false,
   children,
-}) => {
-  return cloneElement(
+}: UsingKeyboardProps) =>
+  React.cloneElement(
     children,
     Object.assign({}, children.props, {
       className: clsx(
@@ -52,7 +52,6 @@ export const UsingKeyboard: React.FC<UsingKeyboardProps> = ({
       ),
     })
   )
-}
 
 // istanbul ignore next
 if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'production') {
